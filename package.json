@@ -22,11 +22,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env PUBLIC_URL=/wedding-lp/docs/build/ react-scripts build",
+    "build": "cross-env PUBLIC_URL=/wedding-lp/ react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "yarn run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
